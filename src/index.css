@@ -32,13 +32,15 @@ header h1 {
   text-align: center;
 }
 
-.card {
+.card, .episode-card, .location-card {
   display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: DarkCyan;
-    margin: 5% 20%;
-    border: solid 5px black;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: DarkCyan;
+  margin: 5% 20%;
+  border: solid 5px black;
 }
+
+ 

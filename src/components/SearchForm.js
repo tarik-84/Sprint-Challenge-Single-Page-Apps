@@ -39,7 +39,12 @@ const handleInputChange = event => {
     </form>
 
     {data.map((char => {
-  return(<CharacterCard key={char.id} name={char.name} species ={char.species} status={char.status}/>)
+  return(<CharacterCard key={char.id} 
+    image={char.image}
+    name={char.name} 
+    species ={char.species} 
+    status={char.status}
+    />)
 }
 ))}
 

@@ -27,9 +27,14 @@ export default function CharacterList() {
        <Link to="/Search"><button>Search
           </button></Link>
       {character.map(char => (
-        <CharacterCard key={char.id} name={char.name} status={char.status} species={char.species} gender={char.gender} />
-        )
-      )}
+        <CharacterCard key={char.id} 
+        image={char.image}
+        name={char.name} 
+        status={char.status} 
+        species={char.species} 
+        gender={char.gender} 
+        />
+        ))}
     </section>
   );
 }
