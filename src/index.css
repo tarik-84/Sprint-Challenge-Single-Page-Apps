@@ -42,5 +42,14 @@ header h1 {
   margin: 5% 20%;
   border: solid 5px black;
 }
+a {
+  text-decoration: none;
+}
+
+.search {
+  position: absolute;
+  right: 45%;
+  top: 17%;
+}
 
  

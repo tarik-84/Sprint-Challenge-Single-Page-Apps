@@ -6,13 +6,14 @@ const Buttons = styles.button`
 margin-left: 2%;
 margin-top: 5%;
 position: relative;
-left: 120px;
+left: 140px;
 background-color: lightblue;
-
+border-radius: 7px;
 `
 const Page = styles.section`
 display:flex;
-justify-content:center;`
+justify-content:center;
+`
 const Img = styles.img`
 margin-left: 25%;
 margin-top: 10%;`
@@ -22,9 +23,7 @@ export default function WelcomePage() {
     <Page className="welcome-page">
       <header>
         <h1>Welcome to the ultimate fan site!</h1>
-        <Link to="/Characters"><Buttons>Characters
-          </Buttons></Link>
-          <Link to="/Search"><Buttons>Search
+          <Link to="/Characters"><Buttons>Characters
           </Buttons></Link>
           <Link to="/location"><Buttons>Location
           </Buttons></Link>

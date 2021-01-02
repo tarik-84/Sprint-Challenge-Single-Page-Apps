@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import {Link} from 'react-router-dom';
 import EpisodeCard from './EpisodeCard'
+import { Button } from '@material-ui/core';
 
 export default function EpisodeList() {
     const [episodes, setEpisodes] = useState([]);
@@ -20,7 +21,7 @@ export default function EpisodeList() {
 
     return (
       <section className="episode-list">
-      <Link to= "/"><button>Home</button></Link>
+      <Link to= "/"><Button variant="outlined" color="primary" size="small" >Home</Button></Link>
      {episodes.map(episode => (
        <EpisodeCard key={episode.id}
         name={episode.name}

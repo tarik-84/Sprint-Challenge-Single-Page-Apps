@@ -38,7 +38,7 @@ const handleInputChange = event => {
           </button></Link>
     </form>
 
-    {data.map((char => {
+    {data.map(char => {
   return(<CharacterCard key={char.id} 
     image={char.image}
     name={char.name} 
@@ -46,7 +46,7 @@ const handleInputChange = event => {
     status={char.status}
     />)
 }
-))}
+)}
 
 </div>
     </section>
